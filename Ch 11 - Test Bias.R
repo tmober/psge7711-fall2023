@@ -8,7 +8,8 @@
 ######################################################################
 
 #1 Testing group differences in alpha estimates of the Moral Tolerance Scale items
-load(file="C:/.../MRMTch3.Rdata")
+load("/cloud/project/MRMTch3.Rdata")
+
 MRMTch3[c("MTS_3", "MTS_5", "MTS_7")]  <- 6 - MRMTch3[c("MTS_3", "MTS_5", "MTS_7")]
 females <- MRMTch3[which(MRMTch3$Gender=="Female"),]
 males   <- MRMTch3[which(MRMTch3$Gender=="Male"),]
@@ -89,7 +90,7 @@ abline(a=-.217, b=.024722)  ## for g1
 abline(a=-.108340, b = .026320, lty=2 )  ## for g2
 legend('topleft', c('Group 1', 'Group 2'), lty=c(1,2))
 
-citation("psych")
-citation("cocron")
-citation("multiway")
-citation("openintro")
+# citation("psych")
+# citation("cocron")
+# citation("multiway")
+# citation("openintro")

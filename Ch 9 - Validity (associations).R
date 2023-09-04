@@ -64,7 +64,7 @@ trModel(rxy=.30, sr=.10, br=.60)
 cor.test(motdat$imscale, motdat$dep)
 
 
-citation("qcv")
-citation("psychometric")
-citation("caret")
-citation("iopsych")
+# citation("qcv")
+# citation("psychometric")
+# citation("caret")
+# citation("iopsych")

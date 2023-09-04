@@ -51,12 +51,13 @@ alpha(data)
 discrim(data)
 
 #7 Load the MTS data and reverse-code the negatively-keyed items
-load(file="C:/.../MRMTch3.Rdata")
+load("/cloud/project/MRMTch3.Rdata")
+
 MRMTch3[c("MTS_3", "MTS_5", "MTS_7")]  <- 6 - MRMTch3[c("MTS_3", "MTS_5", "MTS_7")]
 
 # Note that alpha provides a ci by default. This is based on   
 alpha(MRMTch3[c("MTS_1","MTS_2","MTS_3","MTS_4","MTS_5",
                 "MTS_6","MTS_7","MTS_8","MTS_9","MTS_10")])
 
-citation(package = "psych")
-citation(package = "psychometric")
+# citation(package = "psych")
+# citation(package = "psychometric")

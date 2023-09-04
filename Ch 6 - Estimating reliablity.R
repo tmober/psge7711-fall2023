@@ -27,7 +27,8 @@ library(psychometric)
 alpha.CI(0.621677, k=4, N=4, level = 0.95)
 
 #4 Load the MTS data and reverse-code the negatively-keyed items
-load(file="C:/.../MRMTch3.Rdata")
+load("/cloud/project/MRMTch3.Rdata")
+
 MRMTch3[c("MTS_3", "MTS_5", "MTS_7")]  <- 6 - MRMTch3[c("MTS_3", "MTS_5", "MTS_7")]
 
 #5 Split-half rel estimates for MTS
@@ -51,6 +52,6 @@ omega(MRMTch3[c("MTS_1","MTS_2","MTS_3","MTS_4","MTS_5",
          varphi = 0.1)
 
 
-citation(package = "psych")
-citation(package = "psychometric")
-citation(package = "coefficientalpha")
+#citation(package = "psych")
+#citation(package = "psychometric")
+#citation(package = "coefficientalpha")

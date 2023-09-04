@@ -71,7 +71,8 @@ plot(out.2pl, type = "IIC", items = 0, lwd=2)
 #4 For polytymous items, using Graded Response Model
 
 #4a Load the Satisfaction With Life Scale SWL responses
-load(file="C:/.../MRMTch3.Rdata")
+load("/cloud/project/MRMTch3.Rdata")
+
 
 #4b IRT - Use GRM to get item parameters
 out.grm <- grm(MRMTch3[,c("SWL_1","SWL_2","SWL_3","SWL_4","SWL_5")] )
@@ -88,4 +89,4 @@ plot(out.grm, type = "IIC", items = 0, lwd=2)
 # To get irt-based trait scores for each response pattern
 swl.tscore <- factor.scores.grm(out.grm)
 
-citation("ltm")
+# citation("ltm")

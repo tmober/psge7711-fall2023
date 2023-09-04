@@ -10,7 +10,8 @@
 #####################################################################
 
 #1. Load the data, as revised via Chapter 2's syntax
-load(file="C:/../MRMTch3.Rdata")
+load("/cloud/project/MRMTch3.Rdata")
+
 
 #2. Computing the mean, var, and sd easily for one variable at a time
 mean(MRMTch3$MRS)
@@ -49,5 +50,5 @@ MRSt <- rescale(MRMTch3$MRS, mean = 50, sd = 10)
 head(cbind(MRMTch3$MRS,MRSz, MRSt))
 describe(cbind(MRMTch3$MRS, MRSz, MRSt))
 
-citation(package = "sjstats")
-citation(package = "psych")
+# citation(package = "sjstats")
+# citation(package = "psych")

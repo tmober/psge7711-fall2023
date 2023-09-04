@@ -16,7 +16,8 @@ library(VCA)
 ###########################################################
 #2 G Theory analysis of a one-facet design
 
-load("C:\..\GTheory Table 13.1.Rdata")
+load("/cloud/project/GTheory Table 13.1.Rdata")
+
 # Note "long" data structure
 dat13.1
 
@@ -55,7 +56,8 @@ plot(agcoeff, type="o", xlab="Number of Items",
 #########################################################
 #3 G Theory analysis of a two-facet design
 
-load("C:\...\GTheory Table 13.5.Rdata")
+load("/cloud/project/GTheory Table 13.5.Rdata")
+
 head(dat13.5)
 
 # G-Study phase
@@ -130,4 +132,4 @@ agcoeff5obs
 #legend("bottomright", horiz = TRUE, lty = c(1, 2, 3),
 #       legend = c("1 observer", "3 Observers", "5 Observers"))
 
-citation("VCA")
+# citation("VCA")

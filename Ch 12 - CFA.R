@@ -8,14 +8,14 @@
 ######################################################################
 
 #1 Install and activate two key packages
-install.packages(c("lavaan","semTools"))
+# install.packages(c("lavaan","semTools"))
 library(lavaan)
 library(semTools)
 
 # 2 General application of CFA:
 # Evaluating a measurement model in a single sample of respondents
 # Here, we conduct a CFA of the Satisfaction With Life Scale SWL
-load(file="C:/.../MRMTch3.Rdata")
+load("/cloud/project/MRMTch3.Rdata")
 
 swlmod <- 'swl =~ SWL_1 + SWL_2 + SWL_3 + SWL_4 + SWL_5' 
 swlfit <- cfa(swlmod, data = MRMTch3, std.lv=TRUE) 
@@ -102,5 +102,5 @@ strictfit <- measEq.syntax(configural.model = confit,
 cfit2 <- compareFit(confit, weakfit, strongfit,strictfit, nested=TRUE)
 summary(cfit2)
 
-citation("lavaan")
-citation("semTools")
+# citation("lavaan")
+# citation("semTools")

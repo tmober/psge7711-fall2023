@@ -54,7 +54,7 @@ print.psych(ex3out, sort=TRUE)
 
 
 #5. Load the data, as revised via Chapter 2's syntax
-load(file="C:/.../MRMTch3.Rdata")
+load("/cloud/project/MRMTch3.Rdata")
 VSS.scree(MRMTch3[c("MRS_1","MRS_2","MRS_3","MRS_4","MRS_5",
                     "MRS_6","MRS_7","MRS_8","MRS_9","MRS_10",
                     "MTS_1","MTS_2","MTS_3","MTS_4","MTS_5",
@@ -67,4 +67,4 @@ MRMTout <- fa(MRMTch3[c("MRS_1","MRS_2","MRS_3","MRS_4","MRS_5",
              fm="pa", nfactors = 2, rotate = "promax")
 print.psych(MRMTout, sort=TRUE)
 
-citation(package = "psych")
+# citation(package = "psych")
