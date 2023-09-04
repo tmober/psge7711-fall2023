@@ -8,7 +8,12 @@
 ######################################################################
 
 #1 Testing group differences in alpha estimates of the Moral Tolerance Scale items
-load("/cloud/project/MRMTch3.Rdata")
+load("/cloud/project/MRMTch3.Rdata")  #if using on Postit Cloud
+
+# if using on desktop RStudio, use this instead (note that the data file will need to be in the same folder as this R script file)
+# wd <- getwd() # this gets your working directory and saves it as an object in your R environment.
+# setwd(wd) # this sets your working directory. 
+# load("MRMTch3.Rdata") # this load the "ta_data" dataframe
 
 MRMTch3[c("MTS_3", "MTS_5", "MTS_7")]  <- 6 - MRMTch3[c("MTS_3", "MTS_5", "MTS_7")]
 females <- MRMTch3[which(MRMTch3$Gender=="Female"),]

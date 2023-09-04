@@ -16,7 +16,12 @@ library(VCA)
 ###########################################################
 #2 G Theory analysis of a one-facet design
 
-load("/cloud/project/GTheory Table 13.1.Rdata")
+load("/cloud/project/GTheory Table 13.1.Rdata")  #if using on Postit Cloud
+
+# if using on desktop RStudio, use this instead (note that the data file will need to be in the same folder as this R script file)
+# wd <- getwd() # this gets your working directory and saves it as an object in your R environment.
+# setwd(wd) # this sets your working directory. 
+# load("GTheory Table 13.1.Rdata") # this load the "ta_data" dataframe
 
 # Note "long" data structure
 dat13.1
@@ -56,7 +61,13 @@ plot(agcoeff, type="o", xlab="Number of Items",
 #########################################################
 #3 G Theory analysis of a two-facet design
 
-load("/cloud/project/GTheory Table 13.5.Rdata")
+load("/cloud/project/GTheory Table 13.5.Rdata")  #if using on Postit Cloud
+
+# if using on desktop RStudio, use this instead (note that the data file will need to be in the same folder as this R script file)
+# wd <- getwd() # this gets your working directory and saves it as an object in your R environment.
+# setwd(wd) # this sets your working directory. 
+# load("GTheory Table 13.5.Rdata") # this load the "ta_data" dataframe
+
 
 head(dat13.5)
 

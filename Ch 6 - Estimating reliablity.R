@@ -27,7 +27,12 @@ library(psychometric)
 alpha.CI(0.621677, k=4, N=4, level = 0.95)
 
 #4 Load the MTS data and reverse-code the negatively-keyed items
-load("/cloud/project/MRMTch3.Rdata")
+load("/cloud/project/MRMTch3.Rdata")  #if using on Postit Cloud
+
+# if using on desktop RStudio, use this instead (note that the data file will need to be in the same folder as this R script file)
+# wd <- getwd() # this gets your working directory and saves it as an object in your R environment.
+# setwd(wd) # this sets your working directory. 
+# load("MRMTch3.Rdata") # this load the "ta_data" dataframe
 
 MRMTch3[c("MTS_3", "MTS_5", "MTS_7")]  <- 6 - MRMTch3[c("MTS_3", "MTS_5", "MTS_7")]
 
@@ -52,6 +57,6 @@ omega(MRMTch3[c("MTS_1","MTS_2","MTS_3","MTS_4","MTS_5",
          varphi = 0.1)
 
 
-#citation(package = "psych")
-#citation(package = "psychometric")
-#citation(package = "coefficientalpha")
+# citation(package = "psych")
+# citation(package = "psychometric")
+# citation(package = "coefficientalpha")

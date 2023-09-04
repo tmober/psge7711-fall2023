@@ -54,7 +54,13 @@ print.psych(ex3out, sort=TRUE)
 
 
 #5. Load the data, as revised via Chapter 2's syntax
-load("/cloud/project/MRMTch3.Rdata")
+load("/cloud/project/MRMTch3.Rdata")  #if using on Postit Cloud
+
+# if using on desktop RStudio, use this instead (note that the data file will need to be in the same folder as this R script file)
+# wd <- getwd() # this gets your working directory and saves it as an object in your R environment.
+# setwd(wd) # this sets your working directory. 
+# load("MRMTch3.Rdata") # this load the "ta_data" dataframe
+
 VSS.scree(MRMTch3[c("MRS_1","MRS_2","MRS_3","MRS_4","MRS_5",
                     "MRS_6","MRS_7","MRS_8","MRS_9","MRS_10",
                     "MTS_1","MTS_2","MTS_3","MTS_4","MTS_5",

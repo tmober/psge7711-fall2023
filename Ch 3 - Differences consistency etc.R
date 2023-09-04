@@ -10,8 +10,12 @@
 #####################################################################
 
 #1. Load the data, as revised via Chapter 2's syntax
-load("/cloud/project/MRMTch3.Rdata")
+load("/cloud/project/MRMTch3.Rdata")  #if using on Postit Cloud
 
+# if using on desktop RStudio, use this instead (note that the data file will need to be in the same folder as this R script file)
+# wd <- getwd() # this gets your working directory and saves it as an object in your R environment.
+# setwd(wd) # this sets your working directory. 
+# load("MRMTch3.Rdata") # this load the "ta_data" dataframe
 
 #2. Computing the mean, var, and sd easily for one variable at a time
 mean(MRMTch3$MRS)
