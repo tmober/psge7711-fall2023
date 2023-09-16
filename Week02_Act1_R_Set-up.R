@@ -3,11 +3,11 @@
 
 
 
-# Congratulations! It seems that you've figured out how to open the R file (hopefully in RStudio).
+# Congratulations! It seems that you've figured out how to open the R file! Note that this activity is meant to be conducted in Posit Cloud.
 
 ###
 # (1) Opening this R script file
-# If this file has not opened in the RStudio app, that means you either need to download one ofthe following:
+# If this file has not opened in the RStudio app, that means you need to download one of the following:
 ## R (https://cran.r-project.org/)
 ## RStudio (https://posit.co/download/rstudio-desktop/)
 # Both are free to download and install.
@@ -26,12 +26,12 @@ library(corrplot)
 # (2) Create/set working directory
 # Before you go any further, create a folder where you plan to save this file and any other R script files or data files for this course. 
 # Move all of those files to that folder.
-# This folder will serve as your working direcotry
+# This folder will serve as your working directory
 
 
 ## This next piece of code is very important as it will help the R application "find" the data you are trying to use or save any output files you are trying to create.
-wd <- getwd() # this gets your working directory and saves it as an object in your R environment.
-setwd(wd) # this sets your working directory. 
+wd <- getwd() # This gets your working directory and saves it as an object in your R environment.
+setwd(wd) # This sets your working directory. 
 
 # If you check the "Console" at the bottom of your R Studio window, you should see that the wd is the same as the folder path you just moved this file to.
 
