@@ -1,7 +1,9 @@
 # PSGE 7711: Week 2
 # Importing and Manipulating Data
 
-# install.packages("psych") # use this if you have never installed "psych" before
+# Congratulations! It seems that you've figured out how to open the R file! Note that this activity is meant to be conducted using the desktop RStudio application.
+
+# install.packages("psych") # Use this if you have never installed "psych" before
 library(psych) 
 
 
@@ -12,7 +14,7 @@ getwd()
 # If you want to change your working directory, you can use this script below.
 #setwd() 
 
-# You can also change your workign directory by going to "Session/Set Working Directory" from the menu bar above.
+# You can also change your working directory by going to "Session/Set Working Directory" from the menu bar above.
 
 
 # Importing data
