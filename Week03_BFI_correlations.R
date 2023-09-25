@@ -5,10 +5,6 @@
 # install or load packages into library
 # install.packages("psych")
 library(psych)
-# install.packages("dplyr")
-library(dplyr)
-# install.packages("Hmisc")
-library(Hmisc)
 # install.packages("corrplot")
 library(corrplot)
 
